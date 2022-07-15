@@ -1,0 +1,70 @@
+:root {
+    --grey: #C9CED0;
+    --blue: #4863A0;
+    --orange: #FF8040;
+}
+
+* {
+font-family: Arial, 'Helvetica', sans-serif;
+font-size: 16px;
+}
+
+body{
+    background-color: var(--grey);
+}
+a {
+    color: var(--grey);
+}
+
+h2 {
+    color: var(--blue)
+}
+
+/*Header and Navigation*/
+header {
+    background-color: var(--blue);
+}
+header >* {
+    color: var(--grey);
+    display: inline-block;
+    font-size: 300%;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 300%;
+}
+
+header nav{
+    float:right;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 44px;
+    color: var(--grey)
+}
+
+
+
+/*About Me*/
+
+/*Completed Projects*/
+
+.meeting{
+    max-height: 724px;
+    max-width: 1085px;
+}
+
+/*Contact Information*/
+
+.reachme ul li {
+    display: inline-block;
+}
+
+/*Footer and Return Link*/
+footer {
+    background-color: var(--blue);
+    color: var(--grey);
+    text-align:center
+}
