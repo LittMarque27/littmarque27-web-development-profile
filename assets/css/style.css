@@ -16,51 +16,151 @@ a {
     color: var(--grey);
 }
 
-h2 {
-    color: var(--blue)
+h2, h3, h4 {
+    color: var(--blue);
+    text-align: right;
 }
 
 /*Header and Navigation*/
 header {
     background-color: var(--blue);
 }
-header >* {
+header {
     color: var(--grey);
-    display: inline-block;
-    font-size: 300%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    text-align: left;
+    justify-content: flex-start;
     font-size: 300%;
 }
 
 header nav{
-    float:right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:auto;
+}
+
+/*
+header ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex end;
+    
 }
 
 header ul li {
-    display: inline-block;
-    font-size: 44px;
-    color: var(--grey)
+    display: inline-flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+*/
+
+
+/*Main*/
+article{
+    display: flex;  
 }
 
+aside {
+    justify-content: flex-start;
+    width: 15vw;
+    margin-right: 2vw
+}
 
+.bio {
+    display: inline-flex;
+    justify-content: flex-end;
+    max-width: 80vw;
+    margin-left: auto;
+    border-left: 10px solid var(--blue);
+}
 
-/*About Me*/
+.bio img{
+    justify-content: flex-end;
+    max-width: 20vw;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 80vw;
+    margin-left: auto;
+}
+
+.primo {
+    display:flex;
+    width: 80vw;
+    position:relative;
+}
+
+.secondo {
+    display:flex;
+    width: 40vw;
+    position: relative;
+}
+
+h4 {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+    background-color: var(--blue);
+    color: var(--grey);
+    font-size: 32px;
+    padding: 1vh;
+    flex: 1 1 auto;
+}
+
+figure {
+    display: flex;
+    border: 10px solid var(--blue);
+}
 
 /*Completed Projects*/
 
 .meeting{
-    max-height: 724px;
-    max-width: 1085px;
+    display: flex;
+    max-width: 80vw;
+    min-width: 0px;
+    flex: 1 1 80vw;
 }
 
+.secondo img{
+    max-width: 40vw;
+    min-width: 0px;
+    flex: 1 1 40vw;
+}
 /*Contact Information*/
 
-.reachme ul li {
-    display: inline-block;
+.reachme {
+    display: flex;
+    margin-left: auto;
+    width: 80vw;
+    border-left: 10px solid var(--blue);
+    justify-content: space-between;
 }
+
+
+
+/*
+.space {
+    display:flex;  
+    flex-direction: row; 
+    justify-content: flex-end;
+}
+*/
+
+.around {
+    display: inline-flex; 
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
 
 /*Footer and Return Link*/
 footer {
