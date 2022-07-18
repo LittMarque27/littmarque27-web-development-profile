@@ -1,12 +1,16 @@
+* {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 16px;
+    }
+
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --grey: #C9CED0;
     --blue: #4863A0;
     --orange: #FF8040;
-}
-
-* {
-font-family: Arial, 'Helvetica', sans-serif;
-font-size: 16px;
 }
 
 body{
@@ -14,11 +18,6 @@ body{
 }
 a {
     color: var(--grey);
-}
-
-h2{
-    color: var(--blue);
-    text-align: right;
 }
 
 /*Header and Navigation*/
@@ -32,27 +31,30 @@ header {
 
 header h1 {
     font-size: 300%;
+    padding: 10px;
 }
 
 header nav{
     display: block;
-    align-items: center;
 }
 
 
-header ul {
+header nav ul {
     display:flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-/*
-header ul li {
-    display: inline-flex;
-    margin-left: 5px;
-    margin-right: 5px;
+header nav ul li{
+    display: flex;
+    padding: 18px 18px;
 }
-*/
+
+header nav ul li a {
+    font-size: 200%;
+    text-decoration: none;
+}
+
 
 
 /*Main*/
@@ -60,15 +62,19 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+    margin: 18px 0px;
 }
 
 .sub-head {
-    width:20vw
+    width:18vw;
+    margin-right: 1vw;
 }
-aside {
-    justify-content: flex-start;
-    width: 15vw;
-    margin-right: 2vw
+
+h2{
+    color: var(--blue);
+    text-align: right;
+    font-size: 200%;
+    margin-left: 9px;
 }
 
 .bio {
@@ -79,10 +85,15 @@ aside {
     /* border-left: 10px solid var(--blue); */
 }
 
+p {
+    color: var(--blue);
+    font-weight: 500; 
+}
 .bio img{
     /* justify-content: flex-end; */
-    max-width: 20vw;
-    max-height: 17.5vh;
+    width: 20vw;
+    height: 17.5vw;
+    margin: 0px 9px;
 }
 
 .tiles {
@@ -100,7 +111,7 @@ aside {
 
 .alpha img{
     display: flex;
-    max-width: 100;
+    max-width: 100%;
     min-width: 0px;
     flex: 1 1 80vw;
 }
@@ -112,20 +123,30 @@ aside {
 }
 
 .beta img{
-    max-width: 100vw;
+    width: 100%;
     min-width: 0px;
     flex: 1 1 40vw;
 }
 
+.beta a {
+    width: 100%;
+    line-height: 0;
+
+}
+
 h4 {
     position: absolute;
-    bottom: 1vh;
-    left: 1vh;
-    background-color: var(--blue);
-    color: var(--grey);
-    font-size: 32px;
-    padding: 1vh;
+    bottom: 2.5vh;
+    left: 2vh;
     flex: 1 1 auto;
+}
+
+h4 a {
+    font-size: 32px;
+    color: var(--grey);
+    background-color: var(--blue);
+    text-decoration: none;
+    padding: 1vh;
 }
 
 figure {
@@ -145,30 +166,34 @@ figure {
 .reachme ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
-
-
-/*
-.space {
-    display:flex;  
-    flex-direction: row; 
-    justify-content: flex-end;
-}
-*/
-
-.around { 
+.connect { 
     font-weight: bold;
+    font-size: 150%;
     color: var(--blue);
+    text-decoration: none;
 }
 
 
 /*Footer and Return Link*/
 footer {
-    background-color: var(--blue);
-    color: var(--grey);
+    background-color: var(--grey);
+    color: var(--blue);
+    margin-top: 18px;
     text-align:center
+}
+
+h5 {
+    padding: 18px 0px;
+}
+
+footer a{
+    padding-bottom: 32px;
+    color: var(--blue);
+    font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,12 +215,19 @@ footer {
         flex-direction: column;
      } 
 
+     header nav ul li{
+        display: flex;
+        padding: 9px 9px;
+        justify-content: center;
+    }
+
      section{
         flex-direction: column;
     }
 
     .sub-head {
         width: 100vw;
+        margin-bottom: 9px;
     }
 
     h2 {
@@ -208,8 +240,9 @@ footer {
 
     .bio img {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 60vw;
+        height: 52.5vw;
+        margin: 9px auto;
     }
     .tiles,
     .alpha,
@@ -226,6 +259,10 @@ footer {
 
     .reachme ul {
         flex-direction: column;
+    }
+
+    .reachme ul li {
+        padding: 9px 9px;
     }
 }
 
