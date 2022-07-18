@@ -13,20 +13,21 @@
     <header id="top">
         <h1>LittMarque27</h1>
         <nav>
-            <a href="#aboutMe">About Me</a>  
-            <a href="#myWork">My Work</a>
-            <a href="#contactInfo">Contact Information</a>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#contactInfo">Contact Information</a></li>
+            </ul>
         </nav>
     </header>
 
     <Main>
-        <article id="aboutMe">
-            <aside>
-                <h2>About</h2>
-                <h2> Me</h2>
-            </aside>
+        <section id="aboutMe">
+            <div class="sub-head">
+                <h2>About Me</h2>
+            </div>
         
-            <section class="bio">
+            <article class="bio">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui similique nobis suscipit ipsam quae dolorum facilis voluptatem aut error! 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui similique nobis suscipit ipsam quae dolorum facilis voluptatem aut error! 
@@ -38,44 +39,41 @@
                 </p>
 
                 <img src="./assets/images/profile-pic.jpg" alt="Placeholder">
-            </section>
-        </article>
+            </article>
+        </section>
 
-        <br>
+        <section id="myWork">
 
-        <article id="myWork">
-            <aside>
-                <h2>My</h2>
-                <h2> Work</h2>
-            </aside>
+            <div class="sub-head">
+                <h2>My Work</h2>    
+            </div>
 
-            <section class="tiles">
-                <figure class="primo">
-                    <img class= "meeting" src="./assets/images/digital-marketing-meeting.jpg">
-                    <h4 class="horiseon">Horiseon Refactor</h4>
+            <article class="tiles">
+                <figure class="alpha">
+                    <img src="./assets/images/digital-marketing-meeting.jpg">
+                    <h4 class="horiseon">Refactor</h4>
                 </figure>
-                <figure class="secondo">
+                <figure class="beta">
                     <img src="./assets/images/building tile.jpg">
                     <h4 class="more">More</h4>
                 </figure>    
-                <figure class="secondo">
+                <figure class="beta">
                     <img src="./assets/images/code-tile.jpg">
                     <h4 class="projects">Projects</h4>
                 </figure>
-                <figure class="secondo">
+                <figure class="beta">
                     <img src="./assets/images/dog-tile.jpg">
                     <h4 class="Coming">Coming</h4>
                 </figure>    
-                <figure class="secondo">
+                <figure class="beta">
                     <img src="./assets/images/soon-tile.jpg">
                     <h4 class="soon">SOON!!</h4>
                 </figure>
-            </section>
-        </article>
+            </article>
 
-        <br>
+        </section>
 
-        <article id="contactInfo">
+        <!-- <article id="contactInfo">
             <aside>
                 <h2>Contact</h2>
                 <h2> Information</h2>
@@ -86,20 +84,24 @@
                     <a class= "around" href="#">notreal@pleasedontuse.net</a>
                     <a class= "around"href="#">Github</a>
                     <a class= "around"href="#">LinkedIn</a>
-            </section>
+            </section> -->
 
 
-            <!--            <section class="reachme">
+        <section id="contactInfo"> 
+
+            <div class="sub-head">
+                <h2> Contact Information</h2>
+            </div>
+
+            <article class="reachme">
                 <ul class="space">
                     <li class="around">777.777.7777</li>
                     <li class="around">notreal@pleasedontuse.net</li>
                     <li class="around">Github</li>
                     <li class="around">LinkedIn</li>
                 </ul>
-            </section>
-
-        -->
-        </article>
+            </article>
+        </section>
 
     </Main>
 
