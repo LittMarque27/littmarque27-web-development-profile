@@ -2,12 +2,12 @@
 
 This is the preliminary deployment of my first developer profile. My objective is to build a profile that displays relevant information to a potential employer. This page while accomplish that by presenting the following:
 
-An opening section about myself.
-Selectable tiles that directly open examples of my work into a new tab.
-Several methods to contact me directly.
-A navigation bar that directs the user to the appropriate section.
+* An opening section about myself.
+* Selectable tiles that directly open examples of my work into a new tab.
+* Several methods to contact me directly.
+* A navigation bar that directs the user to the appropriate section.
 
-For the time being, much of this information is populated with placeholder text, images, and links. In further iterations of the page, the information will reflect more on how I want to present myself along with further displays of my other completed work.
+For the time being, much of this information is populated with placeholder text, images (from previous coursework or placeimg.com), and links. In further iterations of the page, the information will reflect more on how I want to present myself along with further displays of my other completed work.
 
 ## Navigation
 
